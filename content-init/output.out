@@ -201,3 +201,28 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2021-11-18 10:07:11.151  INFO 4548 --- [nio-3002-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-18 10:07:11.151  INFO 4548 --- [nio-3002-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-11-18 10:07:11.161  INFO 4548 --- [nio-3002-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2021-12-16 03:08:57.707  INFO 26510 --- [           main] c.c.training.TraningApplication          : Starting TraningApplication v1.0-SNAPSHOT on fabmedical-pim with PID 26510 (/home/adminfabmedical/Fabmedical/content-init/target/training-init-1.0-SNAPSHOT.jar started by adminfabmedical in /home/adminfabmedical/Fabmedical/content-init)
+2021-12-16 03:08:57.736  INFO 26510 --- [           main] c.c.training.TraningApplication          : No active profile set, falling back to default profiles: default
+2021-12-16 03:08:59.801  INFO 26510 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3002 (http)
+2021-12-16 03:08:59.820  INFO 26510 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 03:08:59.821  INFO 26510 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2021-12-16 03:08:59.924  INFO 26510 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 03:08:59.924  INFO 26510 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2053 ms
+2021-12-16 03:09:00.303  INFO 26510 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 03:09:00.568  INFO 26510 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.3.1 
+2021-12-16 03:09:01.575  INFO 26510 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-16 03:09:01.836  INFO 26510 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3002 (http) with context path ''
+2021-12-16 03:09:01.846  INFO 26510 --- [           main] c.c.training.TraningApplication          : Started TraningApplication in 5.167 seconds (JVM running for 5.729)
