@@ -66,6 +66,8 @@ jobs:
 
     - name: Helm Install
       uses: azure/setup-helm@v1
+      with:
+        version: v3.4.0
 
     - name: Helm Repo Add
       run: |
@@ -80,7 +82,7 @@ jobs:
         helm chart save . content-web:v${{ env.tag }}
         helm chart save . ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
         # list out saved charts
-        # helm list
+        helm chart list
       env:
         HELM_EXPERIMENTAL_OCI: 1
 
