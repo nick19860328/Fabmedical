@@ -71,7 +71,7 @@ jobs:
         cd ./content-web/charts/web
 
         helm package . content-web:v${{ env.tag }}
-        helm package. ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
+        helm package . ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
  
       env:
         HELM_EXPERIMENTAL_OCI: 1
