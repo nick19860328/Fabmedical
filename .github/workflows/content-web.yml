@@ -76,6 +76,7 @@ jobs:
     - name: Helm Chart Save
       run: |
         cd ./content-web/charts/web
+        helm version
         helm chart save . content-web:v${{ env.tag }}
         helm chart save . ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
         # list out saved charts
