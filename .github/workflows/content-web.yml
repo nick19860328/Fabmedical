@@ -1,10 +1,10 @@
 name: content-web
 
-# This workflow is triggered on push to the 'content-web' directory of the  main branch of the repository
+# This workflow is triggered on push to the 'content-web' directory of the  master branch of the repository
 on:
    push:
       branches:
-         - main
+         - master
       paths:
          - 'content-web/**'
 
@@ -13,14 +13,14 @@ on:
 
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
- imageRepository: 'content-web'
- resourceGroupName: 'fabmedical-pim'
- containerRegistryName: 'fabmedicalpim'
- containerRegistry: 'fabmedicalpim.azurecr.io'
- dockerfilePath: './content-web'
- tag: '${{ github.run_id  }}'
+  imageRepository: 'content-web'
+  resourceGroupName: 'fabmedical-pim'
+  containerRegistryName: 'fabmedicalpim'
+  containerRegistry: 'fabmedicalpim.azurecr.io'
+  dockerfilePath: './content-web'
+  tag: '${{ github.run_id  }}'
 
-# Jobs define the actions that take place when code is pushed to the main branch
+# Jobs define the actions that take place when code is pushed to the master branch
 jobs:
   build-and-publish-docker-image:
     name: Build and Push Docker Image
@@ -69,10 +69,8 @@ jobs:
     - name: Helm Chart Save
       run: |
         cd ./content-web/charts/web
-
         helm chart save . content-web:v${{ env.tag }}
         helm chart save . ${{ env.containerRegistry }}/helm/content-web:v${{ env.tag }}
-
         # list out saved charts
         helm chart list
       env:
